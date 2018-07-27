@@ -1,0 +1,56 @@
+{
+  "demo": {
+    "title": "Übersetzter Demotitel auf schwarzem, Sass-gestyltem Hintergrund"
+  },
+  "pages": {
+    "sign-in": {
+      "loginhint": "Bitte loggen Sie sich ein",
+      "error": {
+        "wrongCredentials": "Die eingegebenen Zugangsdaten sind falsch!"
+      }
+    }
+  },
+  "forms": {
+    "username": {
+      "label": "Benutzername",
+      "error": "Bitte geben Sie Ihren Benutzernamen ein"
+    },
+    "password": {
+      "label": "Passwort",
+      "error": "Bitten geben Sie Ihr Passwort ein"
+    },
+    "signIn": {
+      "label": "Einloggen"
+    }
+  },
+  "errorPages": {
+    "defaultError": {
+      "title": "Hoppla!",
+      "message": "Das sollte nicht passieren!"
+    },
+    "pageNotFound": {
+      "title": "Seite nicht gefunden",
+      "message": "Seite nicht gefunden Nachricht."
+    },
+    "sessionExpired": {
+      "title": "Sitzung abgelaufen",
+      "message": "Sitzung abgelaufen Nachricht."
+    },
+    "permissionDenied": {
+      "title": "Zugriff verweigert",
+      "message": "Zugriff verweigert Nachricht."
+    },
+    "unauthorized": {
+      "title": "Nicht authorisiert",
+      "message": "Nicht authorisiert Nachricht."
+    },
+    "tokenInvalid": {
+      "title": "Token ungültig",
+      "message": "Token ungültig Nachricht."
+    },
+    "apiNotAvailable": {
+      "title": "API nicht verfügbar",
+      "message": "Die API ist zur Zeit nicht verfügbar"
+    }
+  }
+}

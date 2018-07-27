@@ -1,0 +1,56 @@
+{
+  "demo": {
+    "title": "Translated demo title on black sassy background"
+  },
+  "pages": {
+    "sign-in": {
+      "loginhint": "Please sign in",
+      "error": {
+        "wrongCredentials": "The credentials are wrong"
+      }
+    }
+  },
+  "forms": {
+    "username": {
+      "label": "Username",
+      "error": "Please enter your username"
+    },
+    "password": {
+      "label": "Password",
+      "error": "Please enter your password"
+    },
+    "signIn": {
+      "label": "Sign in"
+    }
+  },
+  "errorPages": {
+    "defaultError": {
+      "title": "Woops!",
+      "message": "This shouldn't have happened."
+    },
+    "pageNotFound": {
+      "title": "Page not found",
+      "message": "Page not found error message."
+    },
+    "sessionExpired": {
+      "title": "Session expired",
+      "message": "Session expired message."
+    },
+    "permissionDenied": {
+      "title": "Permission denied",
+      "message": "Permission denied message."
+    },
+    "unauthorized": {
+      "title": "Unauthorized",
+      "message": "Unauthorized message."
+    },
+    "tokenInvalid": {
+      "title": "Token invalid",
+      "message": "Token invalid message."
+    },
+    "apiNotAvailable": {
+      "title": "API not available",
+      "message": "The API is currently not available"
+    }
+  }
+}

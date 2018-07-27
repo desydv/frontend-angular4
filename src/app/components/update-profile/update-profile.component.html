@@ -1,0 +1,58 @@
+<div class="sign-in-page">
+  <form [formGroup]="userUpdateForm" (ngSubmit)="doUpdateProfile()">
+    <div class="sign-in-form-container row">
+      <!-- <div class="alert alert-danger" *ngIf="(!userUpdateForm.controls['password'].required && userUpdateForm.controls['password'].touched) || (!userUpdateForm.controls['username'].valid && userUpdateForm.controls['username'].touched)">
+        <div *ngIf="!userUpdateForm.controls['username'].required && userUpdateForm.controls['username'].touched">username field required</div>
+        <div *ngIf="!userUpdateForm.controls['password'].valid && userUpdateForm.controls['password'].touched">password field required</div>
+      </div>
+      <div class="alert alert-danger" *ngIf="anyError">
+        {{ anyError }}
+      </div> -->
+
+      <div class="col-lg-12 login-hint">
+        <h3>UPDATE PROFILE FORM</h3>
+      </div>
+      <div class="col-lg-12 form-label">
+        <label for="username">Username</label>
+      </div>
+      <div class="col-lg-6 form-input">
+        <input class="form-control" name="username" id="username" type="text" formControlName="username" value={{data.name}}}>
+        <show-errors [control]="userUpdateForm.controls.username"></show-errors>
+      </div>
+      <div class="col-lg-12 form-label">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-lg-6 form-input">
+        <input class="form-control" name="email" id="email" type="text" formControlName="email" />
+        <show-errors [control]="userUpdateForm.controls.email"></show-errors>
+      </div>
+      <div class="col-lg-6 form-input">
+        
+        <show-errors [control]="userUpdateForm.controls.email"></show-errors>
+      </div>
+      <div class="col-lg-12 form-label">
+        <label for="password">Password</label>
+      </div>
+      <div class="col-lg-6 form-input">
+        <input class="form-control" name="password" id="password" type="password" formControlName="password" disabled>
+      </div>
+      <div class="col-lg-12 form-label">
+        <label for="phone">Phone Number</label>
+      </div>
+      <div class="col-lg-6 form-input">
+        <input class="form-control" name="phone" id="phone" type="text" formControlName="phone" maxlength="15"/>
+        <show-errors [control]="userUpdateForm.controls.phone"></show-errors>
+      </div>
+      <div class="col-lg-12 form-label">
+        <br>
+      </div>
+      <div class="col-lg-6 form-button">
+          <button type="submit" class="btn btn-primary btn-lg btn-block sign-in-button"
+            >
+              SAVE
+          </button>
+      </div>
+
+    </div>
+  </form>
+</div>
