@@ -41,6 +41,7 @@ export class UpdatePasswordComponent implements OnInit {
     // console.log('hahah = ', JSON.parse(this.cookieValue));
     this.id = parseValue.id;
     this.updateForm();
+
   }
 
   updateForm() {
@@ -54,7 +55,7 @@ export class UpdatePasswordComponent implements OnInit {
     let items = this.changePassForm.value;
     this.passModel = this.prepareSaveUpdatePassword();
     let params: any = {};
-    params.url = 'http://103.89.2.25/change-password/44';
+    params.url = 'http://103.89.2.25/change-password/' + this.id;
     params.put = JSON.parse(JSON.stringify(this.passModel));
     this.globalService.update(params)
       .then((response) => {

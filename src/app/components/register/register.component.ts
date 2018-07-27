@@ -60,7 +60,7 @@ export class RegisterComponent implements OnInit {
         if (response.status == 'failed') {
           this._alertService.error(response.message, true);
         } else {
-          this.cookieService.set('dataRegistration', JSON.stringify(result.data) );
+          this.cookieService.set('dataRegistration', JSON.stringify(result.data));
           this.router.navigate([ROUTE_DASHBOARD]);
           this._alertService.success(response.message, true);
 
